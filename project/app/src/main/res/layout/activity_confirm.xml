@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.jai.project.Menu3">
-
+    tools:context="com.example.jai.project.ConfirmActivity">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -17,47 +16,34 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="12dp"
-            android:text="Enter the details"
+            android:text="Select The Item"
             android:textAlignment="center"
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+        <ListView
+            android:id="@+id/listViewArtists"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView1"></ListView>
 
         <EditText
-            android:id="@+id/item"
+            android:id="@+id/amt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Enter the item name"
-            android:inputType="textPersonName"/>
-
-        <EditText
-            android:id="@+id/price"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="12dp"
-            android:hint="Enter the price"
-            android:inputType="number" />
-        <Spinner
-            android:id="@+id/spinnerGenres"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="12dp"
-            android:entries="@array/genres"></Spinner>
-
-        <EditText
-            android:id="@+id/ls"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:digits="0123456789"
+            android:elegantTextHeight="false"
             android:ems="10"
-            android:layout_marginBottom="12dp"
-            android:inputType="number"
-            android:hint="Enter the no. of items in stock" />
+            android:hint="Total Amount"
+            android:editable="false"
+            android:enabled="false" />
+
 
         <Button
-            android:id="@+id/buttonAddBus"
+            android:id="@+id/buttonAddUser"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Submit" />
 
-
     </LinearLayout>
 
-</RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

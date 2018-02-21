@@ -7,19 +7,17 @@
         <item
             android:id="@+id/nav_menu1"
             android:icon="@drawable/ic_menu_camera"
-            android:title="Import" />
-        <item
-            android:id="@+id/nav_menu2"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Gallery" />
+            android:title="Generate Bill" />
+
         <item
             android:id="@+id/nav_menu3"
             android:icon="@drawable/ic_menu_slideshow"
-            android:title="Slideshow" />
+            android:title="Enter New Item" />
         <item
-            android:id="@+id/nav_manage"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Tools" />
+            android:id="@+id/nav_menu2"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Update stock" />
+
     </group>
 
     <item android:title="Communicate">
@@ -27,11 +25,11 @@
             <item
                 android:id="@+id/nav_share"
                 android:icon="@drawable/ic_menu_share"
-                android:title="Share" />
+                android:title="Developers" />
             <item
                 android:id="@+id/nav_send"
                 android:icon="@drawable/ic_menu_send"
-                android:title="Send" />
+                android:title="Contact Us" />
         </menu>
     </item>
 
